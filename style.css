@@ -1,0 +1,66 @@
+.item {
+    width: 200px;
+    height: 200px;
+    /* background: linear-gradient(45deg, red, orange, blue); */
+    /* background: linear-gradient(to right, red, orange, blue); */
+    background: linear-gradient(yellow, green, orange);
+  }
+  
+  .filter-container {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    /* agar container 1000px bolsa itemlari ni 
+    sigmaganini pastga tushirib yuboradi */
+    gap: 20px;
+  }
+  
+  .filter-box {
+    width: 250px;
+    padding: 20px;
+    background-image: url("https://via.placeholder.com/300");
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    height: 200px;
+  }
+  
+  .original {
+    filter: none;
+  }
+  
+  .blur {
+    filter: blur(1px);
+  }
+  .brightness {
+    filter: brightness(130%);
+    color: black;
+    /* 100dan pasaysa rangi qorayadi */
+    /* 100dan kopaysa rangi oqaradi */
+    /* brightness foizda beriladi */
+  }
+  
+  .contrast {
+    filter: contrast(150%);
+    color: gray;
+    /* 100dan kichraysa rangi kulranga kiradi */
+    /* 100dan kattaroq bolsa ocharishshi boshlaydi */
+    /* contrast foizda ishlaydi */
+  }
+  .invert {
+    filter: invert(90%);
+    /* 0dan boshlab rangi toqarib ketadi */
+  }
+  
+  .opacity {
+    filter: opacity(10%);
+  
+    /* oposity rangini necha foiz kurinishini korsatadi */
+  }
+  .sepia {
+    filter: sepia(200%);
+  }
+  
